@@ -1,0 +1,19 @@
+C# test
+
+Your task is to create the following:
+
+1. A windows service which reads the prices from the file provided (Sample Data.txt) in a continuous loop 10x a second and provides consumers of the service with the current instrument names and current prices in real-time.
+
+2. A consumer application which connects to the windows service created in 1 and displays in real-time the current price, price direction (+/-/no change), average of the last 5 prices for each instrument, and history of the last 10 prices for each instrument.
+
+3. Test evidence to prove that your solution function as expcted.
+
+The entire file must be continuously read until the application is shut down, it should not be read just once. 
+
+The solution should be zipped up (excluding binaries) and all source returned, this must be able to build in VS2017/19 using .NET Framework >= 4.6.1.
+
+
+
+Notes: Build release
+sc.exe create PriceReader binpath= F:\Code\PriceReporter\PriceReporter\bin\x64\Release\PriceReader.exe
+Choose either UDP or HTTP POST style price transport

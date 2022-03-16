@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>ab44bcdc-b922-43bb-bc16-f6636c246fcb</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Instrument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Logs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PaintStackString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PaintString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Quote.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QuoteMaths.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)QuoteQueue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServiceStatus.cs" />
+  </ItemGroup>
+</Project>
